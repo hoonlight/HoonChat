@@ -50,7 +50,7 @@ const en: LocaleType = {
       newm: "Start a new chat with mask",
       next: "Next Chat",
       prev: "Previous Chat",
-      clear: "Clear Context",
+      clear: "이전 대화 삭제",
       del: "Delete Chat",
     },
     InputActions: {
@@ -63,7 +63,7 @@ const en: LocaleType = {
       },
       Prompt: "Prompts",
       Masks: "Masks",
-      Clear: "Clear Context",
+      Clear: "이전 대화 삭제",
       Settings: "Settings",
       UploadImage: "Upload Images",
     },
