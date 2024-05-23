@@ -50,12 +50,12 @@ export const DEFAULT_CONFIG = {
     model: "gpt-4o" as ModelType,
     temperature: 0.5,
     top_p: 1,
-    max_tokens: 4000,
+    max_tokens: 10000,
     presence_penalty: 0,
     frequency_penalty: 0,
     sendMemory: true,
     historyMessageCount: 10,
-    compressMessageLengthThreshold: 1000,
+    compressMessageLengthThreshold: 10000,
     enableInjectSystemPrompts: true,
     template: config?.template ?? DEFAULT_INPUT_TEMPLATE,
   },
@@ -140,7 +140,7 @@ export const useAppConfig = createPersistStore(
       if (version < 3.4) {
         state.modelConfig.sendMemory = true;
         state.modelConfig.historyMessageCount = 10;
-        state.modelConfig.compressMessageLengthThreshold = 1000;
+        state.modelConfig.compressMessageLengthThreshold = 10000;
         state.modelConfig.frequency_penalty = 0;
         state.modelConfig.top_p = 1;
         state.modelConfig.template = DEFAULT_INPUT_TEMPLATE;
